@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+__pycache__/ 
 *.py[cod]
 *$py.class
 
@@ -118,8 +118,8 @@ __pypackages__/
 celerybeat-schedule
 celerybeat.pid
 
-# SageMath parsed files
-*.sage.py
+# SageMath parsed files ignora todos los archivos .py
+*.sage.py 
 
 # Environments
 .entorno
@@ -129,6 +129,7 @@ entorno/
 ENTORNO/
 entorno.bak/
 entorno.bak/
+entorno/
 
 # Spyder project settings
 .spyderproject

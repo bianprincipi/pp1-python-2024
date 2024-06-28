@@ -1,0 +1,25 @@
+{% extends 'template_base.html' %}
+
+{% block content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Email</th>
+            <th><a href="/personas_add">Agregar Persona</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in listado %}
+            <tr>
+                <td>{{user.name.first}}, {{user.name.last}}</td>,
+                <td>{{user.location.city}}</td>,
+                <td>{{user.email}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+
